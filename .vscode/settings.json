@@ -1,0 +1,6 @@
+{
+  "editor.minimap.autohide": false,
+  "editor.minimap.enabled": true,
+  "editor.experimentalInlineEdit.backgroundColoring": false,
+  "liveServer.settings.port": 5501
+}

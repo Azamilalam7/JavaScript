@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recat</title>
+</head>
+<body>
+    <button>Button Clicked </button>
+    
+</body>
+<script>
+    class Recat{
+        constructor(){
+            this.library = 'React Native'
+            this.server = 'http://localhosts300port'
+
+            document
+                .querySelector('button')
+                .addEventListener('click' , this.handleServer
+                .bind(this) , false )
+                
+        }
+
+        handleServer(){
+            console.log("Button Has Been Clicked ")
+            console.log(this)
+        }
+    }
+
+    const serve = new Recat()
+    Recat.handleServer()
+</script>
+</html>

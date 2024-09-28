@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Closure Aur Coffee </title>
+</head>
+<body style="background-color: black; color: blue;">
+    <p>A closure is the combination of a function bundled together (enclosed) <br>
+       with references to its surrounding state (the lexical environment). <br>
+       In other words, a closure gives you access to an outer function's scope from an inner function.<br>
+       In JavaScript, closures are created every time a function is created, at function creation time.</p>
+
+
+       <button id="Orange">Orange</button>
+       <button id="Yellow">Yellow</button>
+</body>
+<script>
+    // function init() {
+    //     let name = "Mozilla"; 
+    //     function displayName() {
+    //         console.log(name); 
+    //     }
+    //     displayName();
+    // }
+    // init();
+
+    function Outer (){
+        let uchia = `Itachi`
+        console.log(`Uzumaki`,uzumaki)
+        function Inner (){
+            let uzumaki = `Naruto`
+            console.log(`Uchia ` , uchia)
+        }
+        Inner()
+    }
+    Outer()
+    console.log(`Uchia` , uchia)
+</script>
+<script>
+
+
+    // document
+    //     .getElementById("Orange")
+    //     .onclick = function ()
+    //     {
+    //         document
+    //             .body
+    //             .style
+    //             .backgroundColor = "Orange"
+                
+    //     }
+    // document
+    //     .getElementById("Yellow")
+    //     .onclick = function ()
+    //     {
+    //         document
+    //             .body
+    //             .style
+    //             .backgroundColor = "yellow"
+    //     }
+</script>
+<script>
+    function clickHandler (color) {
+      return function ()  {
+      document
+            .body
+            .style
+            .backgroundColor = `${color}`
+    }}
+
+    document.getElementById("Orange")
+            .onclick = clickHandler (`orange`)
+    document.getElementById("Yellow")
+            .onclick = clickHandler (`yellow`)
+
+</script>
+</html>

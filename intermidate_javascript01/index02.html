@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Object Model </title>
+</head>
+<body style = "background-color: rgb(110, 43, 226); color: antiquewhite ;">
+
+    <div class="parent">
+        <div class="week">Monday</div>
+        <div class="week">Tuesday</div>
+        <div class="week">Wednesday</div>
+        <div class="week">Thursday</div>
+        <div class="week">Friday</div>
+        <div class="week">Saturday</div>
+        <div class="week">Sunday</div>
+    </div>
+    
+</body>
+<script>
+    const parent = document.querySelector('.parent')
+    console.log(parent.children[2].innerText)
+
+    for (let index = 0; index <parent.children.length; index++) {
+        console.log(parent.children[index].innerHTML) 
+    }
+    // console.log(parent.firstElementChild)
+    const dayone = document.queryselector('.week')
+    // console.log(dayone)
+</script>
+
+</html>

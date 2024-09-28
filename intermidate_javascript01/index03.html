@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style = "background-color:rgba(0, 0, 0, 0.789); color: antiquewhite ;">
+    
+</body>
+<script>
+    const divider = document.createElement("div")
+    console.log(divider)
+    divider.className = "Idea"
+    divider.id = Math.round(Math.random() * 6 + 1)
+    divider.setAttribute("title" , "ID Genertor ")
+    divider.style.backgroundColor = "aqua"
+    divider.style.padding = "10px"
+    divider.style.borderRadius = "4rem"
+    divider.style.color = "black"
+    divider.style.fontSize = "2rem"
+    divider.innerText = "Hello Guys!!"
+    // const divident = document.createTextNode("Is This Working") Second Way To Display Content 
+    // divider.appendChild(divident)
+    document.body.appendChild(divider)
+</script>
+</html>

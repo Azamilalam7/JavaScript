@@ -1,0 +1,27 @@
+Classes In Javascript 
+Object Oriented Programming 
+
+[What is Object
+Object is a colletion of properties and method]
+
+[Why Use  Object Oriented Programming 
+To Avoid Mess Up in Code ]
+
+*/
+
+Part of Object Oriented Programming 
+Object Literals 
+// Constructor   function (give the new instance or new copy )
+// Prototypes
+// Classes
+// Instances ( new,this )
+
+/*
+
+4 Pillars Of Object Oriented Programming 
+
+1.Abstracrion *Hides The Internal Details Example fetch ()*
+2.Encapsulation *Encapsulate The Data*
+3.Inheritance *Inhertie The Method Of One Class To Another Class*
+4.Polymorphisim *Many Forms Of A Single Method *
+

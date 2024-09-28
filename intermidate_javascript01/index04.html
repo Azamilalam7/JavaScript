@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style = "background-color:rgba(0, 0, 0, 0.789); color: antiquewhite ;">
+   <ul class="language">
+    <li style ="background-color: green; font-size: 20px; color :red">Python </li>
+    <li style ="background-color: green; font-size: 20px; color: red;">Javascript</li>
+    
+   </ul>
+</body>
+<script>
+    function addLanguage(languageName){
+
+            const list_item = document.createElement("li")
+            list_item.innerHTML = `${languageName}`
+            list_item.style.backgroundColor = "green"
+            list_item.style.fontSize = "20px"
+            list_item.style.color = "red"
+            document.querySelector(".language").appendChild(list_item)
+            }
+            addLanguage("Ruby")
+            addLanguage("Swift")
+            addLanguage("Java")
+            addLanguage("C++")
+            addLanguage("C#")
+    function addLanguageInOptimization (languageName) {
+
+           const list_item = document.createElement("li")
+           list_item.appendChild(document.createTextNode(languageName))
+           list_item.style.backgroundColor = "green"
+           list_item.style.fontSize = "20px"
+           list_item.style.color = "red"
+           document.querySelector(".language").appendChild(list_item)
+           }
+           addLanguageInOptimization("TypeScript")
+           addLanguageInOptimization("GO-Lang")
+
+    //Edit 
+    const EditLang = document.querySelector("li:nth-child(4)")
+    EditLang.innerHTML = "Tally"
+
+    //Remove
+    const RemoveLang = document.querySelector("li:nth-child(6)")
+    RemoveLang.remove()
+</script>
+</html>
